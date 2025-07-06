@@ -74,6 +74,7 @@ import { ACCOUNT_TYPE } from './utils/constants';
 
 import { HiArrowNarrowUp } from "react-icons/hi"
 import FaqButton from "./components/common/FaqButton"
+import DebugPanel from "./components/common/DebugPanel"
 
 
 function App() {
@@ -287,6 +288,7 @@ function App() {
         </Routes>
 
       <AuthChecker />
+      <DebugPanel />
     </div>
   );
 }
