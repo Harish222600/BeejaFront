@@ -30,7 +30,7 @@ export const checkAuthValidity = async (token) => {
   if (!token) return false;
   
   try {
-    const response = await fetch('http://localhost:5001/api/v1/admin/users', {
+    const response = await fetch('https://beejalms.onrender.com/api/v1/admin/users', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,

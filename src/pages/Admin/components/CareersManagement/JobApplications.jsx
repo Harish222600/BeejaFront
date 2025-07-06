@@ -324,7 +324,7 @@ const JobApplications = ({ selectedJob, applications, onRefresh }) => {
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => {
-                      const baseUrl = import.meta.env.VITE_APP_BASE_URL || 'http://localhost:5001';
+                      const baseUrl = import.meta.env.VITE_APP_BASE_URL;
                       const downloadUrl = `${baseUrl}/api/v1/job-applications/download/${application._id}`;
                       
                       const token = localStorage.getItem('token');

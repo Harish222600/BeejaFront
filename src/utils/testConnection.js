@@ -4,7 +4,7 @@ import { apiConnector } from '../services/apiConnector';
 export const testBackendConnection = async (token) => {
     try {
         // Test basic server connection
-        const baseUrl = import.meta.env.VITE_APP_BASE_URL || 'http://localhost:5000';
+        const baseUrl = import.meta.env.VITE_APP_BASE_URL;
         console.log('Testing connection to:', baseUrl);
         
         // Test server health

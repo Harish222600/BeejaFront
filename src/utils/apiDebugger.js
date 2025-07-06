@@ -17,7 +17,7 @@ export const debugAPIIssues = () => {
     
     // 3. Network connectivity test
     const testConnectivity = async () => {
-        const baseUrl = import.meta.env.VITE_APP_BASE_URL || 'http://localhost:5000';
+        const baseUrl = import.meta.env.VITE_APP_BASE_URL;
         console.log('Testing connectivity to:', baseUrl);
         
         try {
@@ -51,7 +51,7 @@ export const testAdminAPI = async (token) => {
         return;
     }
     
-    const baseUrl = import.meta.env.VITE_APP_BASE_URL || 'http://localhost:5000';
+    const baseUrl = import.meta.env.VITE_APP_BASE_URL ;
     const apiUrl = `${baseUrl}/api/v1/admin/users`;
     
     console.log('Testing API:', apiUrl);
