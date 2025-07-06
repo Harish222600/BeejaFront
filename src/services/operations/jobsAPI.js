@@ -301,7 +301,7 @@ export const updateApplicationStatus = async (applicationId, statusData, token) 
 };
 
 export const getJobsAnalytics = async (token) => {
-  const toastId = toast.loading("Loading analytics...");
+
   let result = null;
   try {
     const response = await apiConnector("GET", GET_JOBS_ANALYTICS_API, null, {

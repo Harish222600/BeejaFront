@@ -537,7 +537,7 @@ export const createCourseAsAdmin = async (formData, token) => {
 // ================ Get Analytics ================
 export const getAnalytics = async (token) => {
   let result = null
-  const toastId = toast.loading("Loading analytics...")
+  
 
   try {
     if (!token) {
