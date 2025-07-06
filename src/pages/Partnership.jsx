@@ -13,7 +13,7 @@ import intuit from "../assets/Images/certification img/Intuit.png";
 import its from "../assets/Images/certification img/ITS-Logo-Stacked.png";
 import meta from "../assets/Images/certification img/meta-logo.webp";
 import Microsoft from "../assets/Images/certification img/microsoft.webp";
-import Project from "../assets/Images/certification img/project.png";
+import Project from "../assets/Images/certification img/Project.png";
 import Unity from "../assets/Images/certification img/Unity-logo.png";
 
 const partnerLogos = [
