@@ -4,7 +4,7 @@ export const debugAPIIssues = () => {
     
     // 1. Environment Variables
     console.log('Environment Variables:');
-    console.log('- VITE_APP_BASE_URL:', import.meta.env.VITE_APP_BASE_URL);
+    console.log('- BASE_URL:', 'https://beejalms.onrender.com');
     console.log('- NODE_ENV:', import.meta.env.NODE_ENV);
     console.log('- All env vars:', import.meta.env);
     
@@ -17,7 +17,7 @@ export const debugAPIIssues = () => {
     
     // 3. Network connectivity test
     const testConnectivity = async () => {
-        const baseUrl = import.meta.env.VITE_APP_BASE_URL;
+        const baseUrl = 'https://beejalms.onrender.com';
         console.log('Testing connectivity to:', baseUrl);
         
         try {
@@ -36,7 +36,7 @@ export const debugAPIIssues = () => {
     testConnectivity();
     
     // 4. API endpoint construction
-    const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
+    const BASE_URL = 'https://beejalms.onrender.com';
     const GET_ALL_USERS_API = BASE_URL + "/api/v1/admin/users";
     console.log('Constructed API URL:', GET_ALL_USERS_API);
     
@@ -51,7 +51,7 @@ export const testAdminAPI = async (token) => {
         return;
     }
     
-    const baseUrl = import.meta.env.VITE_APP_BASE_URL ;
+    const baseUrl = 'https://beejalms.onrender.com';
     const apiUrl = `${baseUrl}/api/v1/admin/users`;
     
     console.log('Testing API:', apiUrl);
