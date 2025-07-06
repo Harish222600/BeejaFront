@@ -1,5 +1,4 @@
-const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
-
+const BASE_URL = 'https://beejalms.onrender.com';
 // AUTH ENDPOINTS
 export const endpoints = {
   SENDOTP_API: BASE_URL + "/api/v1/auth/sendotp",

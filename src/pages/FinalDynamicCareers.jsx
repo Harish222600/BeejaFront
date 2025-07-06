@@ -316,7 +316,7 @@ const FinalDynamicCareers = () => {
     try {
       console.log('Fetching published jobs...');
       console.log('API Base URL:', import.meta.env.VITE_APP_BASE_URL);
-      console.log('Making request to:', `${import.meta.env.VITE_APP_BASE_URL}/api/v1/jobs/published`);
+      console.log('Making request to:', `https://beejalms.onrender.com/api/v1/jobs/published`);
       
       const result = await getPublishedJobs();
       console.log('Jobs fetch result:', result);

@@ -325,7 +325,7 @@ const JobApplications = ({ selectedJob, applications, onRefresh }) => {
                   <button
                     onClick={() => {
                       const baseUrl = import.meta.env.VITE_APP_BASE_URL;
-                      const downloadUrl = `${baseUrl}/api/v1/job-applications/download/${application._id}`;
+                      const downloadUrl = `https://beejalms.onrender.com/api/v1/job-applications/download/${application._id}`;
                       
                       const token = localStorage.getItem('token');
                       if (token) {

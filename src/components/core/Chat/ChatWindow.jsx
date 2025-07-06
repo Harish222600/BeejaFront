@@ -40,7 +40,7 @@ const ChatWindow = ({ chat, onClose, courseName }) => {
   // Initialize socket connection
   useEffect(() => {
     if (token && chat?._id) {
-      const newSocket = io(import.meta.env.VITE_APP_BASE_URL , {
+      const newSocket = io('https://beejalms.onrender.com' , {
         withCredentials: true
       });
 
